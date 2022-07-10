@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import BookComponent from './components/book-components/BookComponent.js';
+import IncDecComponents from './components/incdec-components/IncDecComponents';
+import FunctionalComponent from './components/functional-components/FunctionalComponents';
+import ClassComponent from './components/class-components/ClassComponents';
+import LifeCycleMethods from './components/functional-components/LifeCycleMethods';
+import LoginForm from './LoginForm';
+import UserFetch from './UserFetch';
+import {Link} from 'react-router-dom';
+class App extends React.Component {
+constructor(props) {
+  super(props);
+  
+}
+componentDidMount(){
+  console.log("app.js is mounted");
+}
 
-function App() {
+render() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <FunctionalComponent></FunctionalComponent>
+        <Link to="/login">Go to Forms Component</Link>
     </div>
   );
 }
-
+}
 export default App;

@@ -1,0 +1,8 @@
+button[id=Tambah]{
+    color: white;
+    background-color: green;
+}
+button[id=Kurang]{
+    color: white;
+    background-color: red;
+}

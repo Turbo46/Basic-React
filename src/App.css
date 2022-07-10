@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +35,16 @@
   to {
     transform: rotate(360deg);
   }
+} */
+table,th,td,tr {
+  border: 2px solid black;
+  padding: 10px;
+
+}
+button{
+  background-color: aqua;
+  color: black bold;
+}
+form {
+  border: 3px solid #f1f1f1;
 }
